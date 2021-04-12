@@ -567,7 +567,7 @@ var app = (function () {
     	};
     }
 
-    const totalSeconds = 20;
+    const totalSeconds = 3;
 
     function instance$1($$self, $$props, $$invalidate) {
     	let progress;
