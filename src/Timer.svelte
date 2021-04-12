@@ -1,12 +1,14 @@
 <script>
 
     import ProgressBar from "./ProgressBar.svelte";
-
+    import { createEventDispatcher} from "svelte";
     const totalSeconds = 20;
     let secondsLeft = totalSeconds;
     let isRunning = false;
     $:progress = ((totalSeconds - secondsLeft)/ totalSeconds) * 100;
 
+    // <!-- Audio -->
+    const dispatch = createEventDispatcher();
     function startTimer(){
         isRunning = true;
         const timer = setInterval(() => {
@@ -15,6 +17,7 @@
             clearInterval(timer);
         secondsLeft = totalSeconds;
         isRunning = false;
+        dispatch("end");
         }
     }, 1000)
     }
