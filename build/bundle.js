@@ -308,18 +308,14 @@ var app = (function () {
 
     function create_fragment$4(ctx) {
     	let div0;
-    	let t2;
+    	let t0;
     	let div1;
 
     	return {
     		c() {
     			div0 = element("div");
-
-    			div0.innerHTML = `<img bp="offset-5@md 4@md 12@sm" src="handwashing.gif" alt="How to wash your hands." class="svelte-1tbqyud"/> 
-
-<p>How to wash your hands.</p>`;
-
-    			t2 = space();
+    			div0.innerHTML = `<img bp="offset-5@md 4@md 12@sm" src="handwashing.gif" alt="How to wash your hands." class="svelte-1tbqyud"/>`;
+    			t0 = space();
     			div1 = element("div");
     			div1.innerHTML = `<a href="https://freesound.org/people/metrostock99/sounds/345086/"><h3 class="hover:text-blue-300">Sound Source</h3></a>`;
     			attr(div0, "bp", "grid");
@@ -327,7 +323,7 @@ var app = (function () {
     		},
     		m(target, anchor) {
     			insert(target, div0, anchor);
-    			insert(target, t2, anchor);
+    			insert(target, t0, anchor);
     			insert(target, div1, anchor);
     		},
     		p: noop,
@@ -335,7 +331,7 @@ var app = (function () {
     		o: noop,
     		d(detaching) {
     			if (detaching) detach(div0);
-    			if (detaching) detach(t2);
+    			if (detaching) detach(t0);
     			if (detaching) detach(div1);
     		}
     	};
@@ -357,12 +353,12 @@ var app = (function () {
     		c() {
     			nav = element("nav");
 
-    			nav.innerHTML = `<div class="container mx-auto"><div class="sm:flex"><a class="text-white text-3xl font-bold p-3" alt="home" href="#home">HWAA</a> 
+    			nav.innerHTML = `<div class="container mx-auto"><div class="sm:flex"><a class="text-white text-3xl font-bold p-3" alt="home" href="#home">HWA</a> 
   
         
-        <div class="ml-55 mt-4 svelte-1pvzyu5"><ul class="text-white sm:self-center text-xl"><li class="sm:inline-block"><a class="p-3 hover:text-black text-yellow-200 transition-all" alt="about" href="#about">One</a></li> 
-            <li class="sm:inline-block"><a class="p-3 hover:text-black text-yellow-200 transition-all" alt="services" href="#services">Two</a></li> 
-            <li class="sm:inline-block"><a class="p-3 hover:text-black text-yellow-200 transition-all" alt="blog" href="#blog">Three</a></li></ul></div></div></div>`;
+        <div class="ml-55 mt-4 svelte-1pvzyu5"><ul class="text-white sm:self-center text-xl"><li class="sm:inline-block"><a class="p-3 hover:text-black text-yellow-200 transition-all" alt="about" href="#about">Made</a></li> 
+            <li class="sm:inline-block"><a class="p-3 hover:text-black text-yellow-200 transition-all" alt="services" href="#services">By</a></li> 
+            <li class="sm:inline-block"><a class="p-3 hover:text-black text-yellow-200 transition-all" alt="blog" href="#blog">iQCudi</a></li></ul></div></div></div>`;
 
     			attr(nav, "class", "bgsabroso shadow-lg svelte-1pvzyu5");
     		},
@@ -444,19 +440,16 @@ var app = (function () {
     	let br0;
     	let t0;
     	let div0;
-    	let h20;
+    	let h2;
     	let t1;
     	let t2;
     	let t3;
-    	let h21;
-    	let t4;
-    	let t5;
     	let progressbar;
-    	let t6;
+    	let t4;
     	let div1;
     	let button;
-    	let t7;
-    	let t8;
+    	let t5;
+    	let t6;
     	let br1;
     	let current;
     	let mounted;
@@ -468,25 +461,21 @@ var app = (function () {
     			br0 = element("br");
     			t0 = space();
     			div0 = element("div");
-    			h20 = element("h2");
+    			h2 = element("h2");
     			t1 = text("Seconds Left: ");
     			t2 = text(/*secondsLeft*/ ctx[0]);
     			t3 = space();
-    			h21 = element("h2");
-    			t4 = text(/*progress*/ ctx[2]);
-    			t5 = space();
     			create_component(progressbar.$$.fragment);
-    			t6 = space();
+    			t4 = space();
     			div1 = element("div");
     			button = element("button");
-    			t7 = text("Start");
-    			t8 = space();
+    			t5 = text("Start");
+    			t6 = space();
     			br1 = element("br");
-    			attr(h20, "class", " text-3xl text-green-900 svelte-1mgbou7");
-    			attr(h20, "bp", "offset-5@md 4@md 12@sm");
+    			attr(h2, "class", " text-3xl text-green-900 svelte-1mgbou7");
+    			attr(h2, "bp", "offset-5@md 4@md 12@sm");
     			attr(div0, "class", "flex items-center");
     			attr(div0, "bp", "grid");
-    			attr(h21, "class", "svelte-1mgbou7");
     			attr(button, "id", "start");
     			button.disabled = /*isRunning*/ ctx[1];
     			attr(button, "class", "start text-white rounded svelte-1mgbou7");
@@ -496,19 +485,16 @@ var app = (function () {
     			insert(target, br0, anchor);
     			insert(target, t0, anchor);
     			insert(target, div0, anchor);
-    			append(div0, h20);
-    			append(h20, t1);
-    			append(h20, t2);
+    			append(div0, h2);
+    			append(h2, t1);
+    			append(h2, t2);
     			insert(target, t3, anchor);
-    			insert(target, h21, anchor);
-    			append(h21, t4);
-    			insert(target, t5, anchor);
     			mount_component(progressbar, target, anchor);
-    			insert(target, t6, anchor);
+    			insert(target, t4, anchor);
     			insert(target, div1, anchor);
     			append(div1, button);
-    			append(button, t7);
-    			insert(target, t8, anchor);
+    			append(button, t5);
+    			insert(target, t6, anchor);
     			insert(target, br1, anchor);
     			current = true;
 
@@ -519,7 +505,6 @@ var app = (function () {
     		},
     		p(ctx, [dirty]) {
     			if (!current || dirty & /*secondsLeft*/ 1) set_data(t2, /*secondsLeft*/ ctx[0]);
-    			if (!current || dirty & /*progress*/ 4) set_data(t4, /*progress*/ ctx[2]);
     			const progressbar_changes = {};
     			if (dirty & /*progress*/ 4) progressbar_changes.progress = /*progress*/ ctx[2];
     			progressbar.$set(progressbar_changes);
@@ -542,12 +527,10 @@ var app = (function () {
     			if (detaching) detach(t0);
     			if (detaching) detach(div0);
     			if (detaching) detach(t3);
-    			if (detaching) detach(h21);
-    			if (detaching) detach(t5);
     			destroy_component(progressbar, detaching);
-    			if (detaching) detach(t6);
+    			if (detaching) detach(t4);
     			if (detaching) detach(div1);
-    			if (detaching) detach(t8);
+    			if (detaching) detach(t6);
     			if (detaching) detach(br1);
     			mounted = false;
     			dispose();
