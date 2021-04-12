@@ -39,14 +39,15 @@ export default {
 	plugins: [
 		svelte({
 			compilerOptions: {
-				// enable run-time checks when not in production
+				// enable run-time checks when not in productionn
 				dev: !production
 			}
 		}),
+
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
 		css({ output: 'bundle.css' }),
-
+		css({output: 'public/build/extra.css'}),
 		// If you have external dependencies installed from
 		// npm, you'll most likely need these plugins. In
 		// some cases you'll need additional configuration -
