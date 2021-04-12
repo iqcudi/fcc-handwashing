@@ -19,7 +19,7 @@ background: linear-gradient(to right, #b29f94, #603813); /* W3C, IE 10+/ Edge, F
 <nav class="bgsabroso shadow-lg">
     <div class="container mx-auto">
       <div class="sm:flex">
-        <a class="text-white text-3xl font-bold p-3" alt="home" href="#home">HWA</a>
+        <a class="text-white text-3xl font-bold p-3" alt="home" href="#home">HWAA</a>
   
         <!-- Menus -->
         <div class="ml-55 mt-4">
