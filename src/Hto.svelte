@@ -13,5 +13,11 @@ img {
     src="handwashing.gif"
     alt="How to wash your hands."
 />
+
 <p>How to wash your hands. </p>
+</div>
+
+<div class="flex justify-center">
+<a href="https://freesound.org/people/metrostock99/sounds/345086/">
+    <h3 class="hover:text-blue-300">Sound Source</h3></a>
 </div>
