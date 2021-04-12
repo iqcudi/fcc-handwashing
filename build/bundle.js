@@ -391,19 +391,12 @@ var app = (function () {
     	let div2;
     	let div1;
     	let div0;
-    	let span;
-    	let t0;
-    	let t1;
 
     	return {
     		c() {
     			div2 = element("div");
     			div1 = element("div");
     			div0 = element("div");
-    			span = element("span");
-    			t0 = text(/*progress*/ ctx[0]);
-    			t1 = text("%");
-    			attr(span, "class", "sr-only");
     			attr(div0, "class", "progress-bar svelte-1d0jtwa");
     			set_style(div0, "width", /*progress*/ ctx[0] + "%");
     			attr(div1, "bp", "offset-5@md 4@md 12@sm");
@@ -414,13 +407,8 @@ var app = (function () {
     			insert(target, div2, anchor);
     			append(div2, div1);
     			append(div1, div0);
-    			append(div0, span);
-    			append(span, t0);
-    			append(span, t1);
     		},
     		p(ctx, [dirty]) {
-    			if (dirty & /*progress*/ 1) set_data(t0, /*progress*/ ctx[0]);
-
     			if (dirty & /*progress*/ 1) {
     				set_style(div0, "width", /*progress*/ ctx[0] + "%");
     			}
